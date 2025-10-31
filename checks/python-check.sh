@@ -4,6 +4,7 @@
 if command -v python >/dev/null 2>&1; then
     pyversion=$(python --version 2>&1)
     echo "Found Python: $pyversion"
+    exit 0
 else
     echo "Python not found!"
     read -p "Install latest version of Python? (y/n): " answer
@@ -13,7 +14,7 @@ else
         sleep 2
         ./installations/install-python.sh
         sleep 2
-        echo " Python installed!"
+        exit 0
     else
         echo " Python is required. Exiting."
         exit 1
