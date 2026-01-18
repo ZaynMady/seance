@@ -39,7 +39,7 @@ mkdir -p data/raw data/processed notebooks src models reports
 cat <<EOF > src/main.py
 # Main script for $PROJECT_DIR
 def main():
-    print("Analysis pipeline start...")
+    print("Hello World")
 
 if __name__ == "__main__":
     main()

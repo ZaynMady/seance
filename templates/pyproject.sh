@@ -41,7 +41,7 @@ mkdir -p src tests
 
 cat <<EOF > src/main.py
 def main():
-    print("Hello from $PROJECT_DIR!")
+    print("Hello World")
 
 if __name__ == "__main__":
     main()
